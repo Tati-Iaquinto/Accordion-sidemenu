@@ -1,0 +1,208 @@
+.sidemenu {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+}
+.bemvindo {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  width: 180px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 111%;
+  text-transform: uppercase;
+  color: lightseagreen;
+}
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  color: #8e8e8e;
+}
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8e8e8e;
+  text-transform: initial;
+  align-self: start;
+}
+h4 {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #949494;
+  align-self: flex-start;
+}
+h5,
+li,
+a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #8e8e8e;
+  text-decoration: none;
+  list-style: none;
+}
+.menu h5 {
+  font-weight: 600;
+  cursor: pointer;
+}
+.container .icon {
+  height: 15.26px;
+  width: 15.25px;
+  border-radius: 0px;
+  margin-right: 10px;
+}
+.container:hover {
+  background-color: #ebebe0;
+  cursor: pointer;
+}
+.container li a:hover {
+  color: mediumorchid;
+}
+.menutitle {
+  height: 41px;
+  width: 100%;
+  border: 1px solid rgba(181, 181, 181, 0.3);
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-title {
+  display: flex;
+}
+.arrow {
+  cursor: pointer;
+  width: 8px;
+  height: 4px;
+  margin-right: 20px;
+  transform: rotate(180deg);
+}
+
+.arrow.ativo {
+  transform: rotate(360deg);
+}
+ul {
+  padding-left: 49px;
+}
+li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sair {
+  height: 120px;
+  box-shadow: 0px -9px 10px -4px rgb(0 0 0 / 6%);
+  display: flex;
+  justify-content: center;
+  align-self: end;
+}
+.sair button {
+  width: 90%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rebeccapurple;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rebeccapurple;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sair button:hover{
+  background: rebeccapurple;
+  color: #ffffff;
+}
+
+.subcontainer {
+  display: block;
+}
+ul {
+  display: none;
+}
+.js-accordion ul.ativo {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    rgba(237, 237, 237, 0.63) 0%,
+    #ffffff 40%,
+    #ffffff 80%
+  );
+  animation: slideDown 0.8s forwards;
+}
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}
+.menutitle:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
+}
+main {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidemenu {
+    width: 70%;
+  }
+  main {
+    display: flex;
+    width: 100%;
+    padding: 0 10%;
+    background: lightseagreen
+  }
+  .sair button {
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .sidemenu {
+    width: 30%;
+  }
+}
+@media (min-width: 1440px) {
+  .sidemenu {
+    width: 30%;
+  }
+  .sair button {
+    width: 80%;
+  }
+}
+/*main*/
+* {
+  font-family: Merriweather, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+}
+
+
+
